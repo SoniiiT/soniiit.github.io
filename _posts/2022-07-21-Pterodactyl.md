@@ -670,7 +670,7 @@ Dafür musst du zuerst unter `"Nodes" -> Allocation"` gehen und dann gibst du un
 
 ![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000111642442485881/unknown.png)
 
-## Server eintichtung
+## Server einrichtung
 Jetzt da du die Ports hast kannst du dich um die erstellung eines Server kümmern.
 
 Dafür links an der Seite `"Servers"` ausgewählt und dann auf `"Create New"` geklickt. Es sollte sich ein neues Fenster öffnen.
