@@ -632,6 +632,107 @@ Wenn du dann wieder auf Nests klickst sollte nun hinter deinem Spiel ein neuer `
 
 Nun kannst du dies beliebg oft mit anderen Spielen widerholen.
 
+# Server einrichten
+Solltest du einen Server einrichten wollen musst du [diese](https://soniiit.github.io/posts/Pterodactyl/#weitere-eier-hinzuf%C3%BCgen) schritte erst machen. Solltest du aber mit den Standart Server weiter machen kannst dies auch machen.
+
+In diesem beispiel nehme ich ein Minecraft Modpack. Solltest du also kein Minecraft Modpack Server erstellen wollen kannst du den schritt `"Curseforge API Key"` und `"Nest einrichten"` überspringen.
+
+## Curseforge API Key
+Du musst auf diesen Link hier klicken um dir erstmal einen Account anzulegen, solltest du aber schon einen Account haben kannst du dich einfach anmelden.
+
+[CurseForge](https://console.curseforge.com/#/login)
+
+Nachdem du dich eingelogged hast wirst du nach einer Organizations Namen gefragt. Gibt da einen Namen eine den du möchtest denn so wird der Name des API keys.
+
+Dann klickst du link an der Seite auf API keys.
+
+Du siehst du hast jetzt einen Key den du später brauchst. Also speicher ihn dir irgendwo zwischen.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000105195176464384/unknown.png)
+
+## Nest einrichten
+Nachdem du den API Key hast musst du zurück zu deinem Panel um dort den Key einzugeben.
+
+Wenn du wieder auf deinem Panel bist klicks du an der Seite auf `"Nests"` und dann suchst du den Nest wo auch dein Ei mit Cursoforge ist und klickst rein.
+
+Jetzt bist du in deim Nest. Klicke jetzt auf `"Curseforge Generic"` um das Ei einszustellen.
+
+Klicke dann auf `"Variables"` und scroll ganz runter.
+
+Nun findest du ein kleines Fenster das heoßt `"API Key"`, gibt da unter `"Default Value"` dein API Key ein.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000111675464224819/unknown.png)
+
+## Ports einrichten
+Nun musst du dich darum kümmern die Ports einzurichten.
+
+Dafür musst du zuerst unter `"Nodes" -> Allocation"` gehen und dann gibst du unter `"IP Adress"` die IP-Adresse des Servers ein und unter `"Ports"` gibst du die Ports `"27000-27099"` ein. Somit haben hast du 100 Ports die du frei belegen kannst.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000111642442485881/unknown.png)
+
+## Server eintichtung
+Jetzt da du die Ports hast kannst du dich um die erstellung eines Server kümmern.
+
+Dafür links an der Seite `"Servers"` ausgewählt und dann auf `"Create New"` geklickt. Es sollte sich ein neues Fenster öffnen.
+
+Jetzt kannst du unter `"Server Name"` dem Server einen Namen geben in meinem beispiel: Test Beispliel
+
+Dann musst du unter Server Owner dein Account eingeben.
+**(Solltest es dein Account nicht finden gib die E-Mail ein)**
+
+Unter `"Default Allocation"` wählst du den Port aus.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000117255922778212/unknown.png)
+
+Unter dem Fenster `"Resource Management"` kannst du alles einstellen wenn um CPU, Ram und Speicherplatz geht.
+
+Kurze erklärung: CPU wird von 100% - z.b 400% angegeben. 1 CPU -> 100%; 4 CPUs -> 400%. Ram wird in MB angben. 1GB -> 1024MB; 4GB -> 4096MB. Dasselbe gilt auch für Disk Space. Da gibst du den Speicherplatz für den Server in MB an. (Das gleiche beispiel wie bei RAM.)
+
+Solltest du aber die freilassen wird der Server alle Rescourcen nehmen die der Server hat.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000117271269736469/unknown.png)
+
+Nun geht es weiter mit dem nächsten Fenster. Das heißt Nest `"Configuration"`.
+
+**Das hier gesagt bezieht sich nur auf Minecraft und kann auf andere Server anders sein**
+
+Unter `"Nest"` wählst du das Nest aus welches genommen werden soll. In meinem beispiel `"Minecraft Extra"`
+
+Dann unter `"Egg"` wählst du das Ei aus in meinem beispiel ist es `"Curseforge Genetic"` wird bei dir aber auch so heißen.
+
+Rechts vom Fenster hast du ein Fenster das nennt sich `"Docker Configuration"`
+Da hast du auch ein dropdown Menü, da wählst du die neueste Java version die für dich verfügbar ist.
+
+**Achtung nun wird etwas für das Minecraft Modpack ausgwählt, solltest du einen anderen Server aufsetzten wollen kannst du denn Punkt überspringen und auf `"Create Server"` klicken**
+
+Nun hast du ein weiteres Fenster das nennt sich `"Service Variables"` da musst du unter `"Modpack Project ID"` die ID des Modpack eingeben. Die findest du wie unten im Bild gezeigt.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000117741719666808/unknown.png)
+
+Nachdem das gemacht wurde kannst du auf `"Create Server"` klicken und starten.
+
+Sollte aber der Server nicht funktionieren, weil in die Konsole irgendwas mit `"not found server.jar"` oder etwas ähnliches sagt. Musst du nur den Server selbstständig runterladen und es auf dem Server hochladen.
+
+Dafür den Server Modpack runterladen wie untern im Bild gezeigt.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000118887045660753/unknown.png)
+
+Dann extrahiere die .zip datei und lade dir das Programm [WinSCP](https://winscp.net/eng/download.php) runter (natürlich gehen auch andere SFTP clients).
+
+Gehe dann wieder zurück auf deinem Panel und wähle `"Servers"` aus.
+
+Klicke dann auf das Symbol rechts an der Seite neben `"Delete"`.
+
+Es sollte dann ein neues Fenster erscheinen indem auch die Konsole ist.
+
+Klicke dann auf `"Settings"` und kicke dann auf `"Launch SFTP"` und bestätige.
+
+![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000121466651693187/unknown.png)
+
+Es sollte sich dann das Programm öffnen und du wirst aufgefordert einen Passwort einzugeben. Der Passwort ist der normale Passwort den du auch verwendest um dich einzuloggen. Nun solltest du dich schon im Ordner des Servers befinden. Navigiere dich auf der linken hälfte durch deinen PC bis du im die Server Dateien gefunden hast die du gerade runtergeladen hast du zieh sie dann auf den Server (Rechte hälfte).
+
+Versuche nun den Server wieder Starten. Sollte es immernoch nicht funktionieren musst du nach deinem Problem suchen.
+
 # Herzlichen Grückwunsch du hast soeben Pterodactyl installiert
 Ja, du hast dich nicht verlesen. Es es nun komplett installiert und du kannst nun auch Server aufsetzten mit ein paar klicks. Solltest du Probleme haben mit dem Interface schlage ich dir vor schau auf YouTube nach einem Guide.
 
