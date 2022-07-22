@@ -666,7 +666,7 @@ Nun findest du ein kleines Fenster das heoßt `"API Key"`, gibt da unter `"Defau
 ## Ports einrichten
 Nun musst du dich darum kümmern die Ports einzurichten.
 
-Dafür musst du zuerst unter `"Nodes" -> Allocation"` gehen und dann gibst du unter `"IP Adress"` die IP-Adresse des Servers ein und unter `"Ports"` gibst du die Ports `"27000-27099"` ein. Somit haben hast du 100 Ports die du frei belegen kannst.
+Dafür musst du zuerst unter `"Nodes" -> Allocation"` gehen und dann gibst du unter `"IP Adress"` die IP-Adresse des Servers ein und unter `"Ports"` gibst du die Ports `"27000-27099"` ein. Somit hast du 100 Ports die du frei belegen kannst.
 
 ![img-description](https://cdn.discordapp.com/attachments/156903785103491073/1000111642442485881/unknown.png)
 
